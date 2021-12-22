@@ -83,7 +83,7 @@ img {
 /* ------------------------HERO--------------------------------- */
 .hero {
   background-color: #2f303a;
-  padding: 200px 0 210px 0;
+  padding: 200px 0;
 }
 .hero-tile {
   font-weight: 900;
@@ -122,7 +122,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .features-list {
   list-style: none;
@@ -196,6 +196,7 @@ address {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .footer-logo-part {
   color: var(--accent-color);
@@ -209,6 +210,7 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+  margin-bottom: 9px;
 }
 .footer-contact-link {
   font-size: 14px;
@@ -216,6 +218,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--secondery-footer-color);
   text-decoration: none;
+  margin-bottom: 9px;
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
@@ -233,6 +236,12 @@ address {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
+}
+.portfolio-list {
+  margin-top: 50px;
+}
+.portfolio-title {
+  margin-bottom: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
