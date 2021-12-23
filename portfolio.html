@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, i  nitial-scale=1.0" />
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,34 +17,36 @@
   <body>
     <!--header-->
     <header class="header">
-      <div class="conteiner">
+      <div class="container header-container">
         <a class="logo" href="./index.html">Web<span class="hedaer-logo-part">Studio</span></a>
         <nav>
           <ul class="header-list">
-            <li><a class="nav-link" href="./index.html">Студия</a></li>
-            <li>
+            <li class="header-item"><a class="nav-link" href="./index.html">Студия</a></li>
+            <li class="header-item">
               <a class="nav-link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li>
+            <li class="header-item">
               <a class="nav-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-list">
-          <li>
-            <a class="nav-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="nav-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="right-container">
+          <ul class="header-list">
+            <li class="header-item-2">
+              <a class="nav-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="header-item-2">
+              <a class="nav-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Main section-->
     <main>
       <!--portfolio-->
       <section class="portfolio">
-        <div class="conteiner">
+        <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="filter">
             <li class="filter-item">
@@ -125,7 +127,7 @@
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="conteiner">
+      <div class="container">
         <a class="logo-footer" href="./index.html"
           >Web<span class="footer-logo-part">Studio</span></a
         >

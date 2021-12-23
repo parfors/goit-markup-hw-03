@@ -30,7 +30,7 @@ img {
   display: block;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -40,6 +40,22 @@ img {
   padding: 24px 0;
   border-bottom: #ececec 1px solid;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-right: nth-ch;
+}
+.right-container {
+  margin-left: auto;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -48,6 +64,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .hedaer-logo-part {
   color: #000000;
@@ -79,6 +96,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primeri-text-color);
   text-decoration: none;
+  margin-left: 50px;
 }
 /* ------------------------HERO--------------------------------- */
 .hero {
@@ -86,6 +104,7 @@ img {
   padding: 200px 0;
 }
 .hero-tile {
+  display: block;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -93,27 +112,41 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  display: block;
+  max-width: 700px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
 }
 .hero-button {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: #ffffff;
   cursor: pointer;
+  min-width: 200px;
+  min-height: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 /* ------------------------FEATURES--------------------------------- */
 .features {
   padding-top: 94px;
+}
+.features-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-basis: calc(100% / 4 - 30px);
+}
+.features-list {
+  list-style: none;
 }
 .features-title {
   font-weight: 700;
@@ -124,10 +157,12 @@ img {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.features-list {
-  list-style: none;
+/* .features-text:not(:nth-child(4n)) {
+  margin-right: 30px; */
 }
 .features-text {
+  display: block;
+  width: 270px;
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
