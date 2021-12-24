@@ -37,8 +37,11 @@ img {
 }
 /* ------------------------HEADER--------------------------------- */
 .header {
-  padding: 24px 0;
   border-bottom: #ececec 1px solid;
+}
+nav a {
+  display: block;
+  padding: 32px 0;
 }
 .header-container {
   display: flex;
@@ -220,6 +223,9 @@ img {
   border-radius: 0px 0px 4px 4px;
   /* overflow: hidden; */
 }
+.card-description {
+  padding: 30px 0;
+}
 .member-title {
   font-weight: 500;
   font-size: 16px;
@@ -227,7 +233,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin: 30px 0 10px 0;
+  margin-bottom: 10px;
 }
 .member-text {
   font-size: 16px;
@@ -323,7 +329,7 @@ address {
   margin-bottom: 4px;
 }
 .portfolio-card-text {
-  padding-top: 0px;
+  padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
