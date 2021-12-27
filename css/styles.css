@@ -146,7 +146,7 @@ nav a {
 }
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-right: -30px;
 }
 .features-item {
@@ -185,7 +185,7 @@ nav a {
 }
 .techniques-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-right: -30px;
 }
 .techniques-item {
@@ -209,7 +209,7 @@ nav a {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-right: -30px;
 }
 .team-item {
@@ -310,7 +310,7 @@ address {
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-right: -30px;
   margin-bottom: -30px;
 }
