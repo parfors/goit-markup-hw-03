@@ -22,6 +22,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .button {
   cursor: pointer;
@@ -47,18 +48,20 @@ nav a {
   display: flex;
   align-items: center;
 }
-.header-list {
+.site-nav {
   display: flex;
-  align-items: center;
-  margin-right: nth-ch;
 }
-.right-container {
+.contacts {
+  display: flex;
   margin-left: auto;
 }
-.header-item:not(:last-child) {
+
+.site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.contacts-item:last-child {
+  margin-left: 50px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -72,19 +75,17 @@ nav a {
 .hedaer-logo-part {
   color: #000000;
 }
-.header-list {
-  list-style: none;
-}
-.nav-link:hover,
-.nav-link:focus,
-.nav-contact-link:hover,
-.nav-contact-link:focus {
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
-.current.nav-link {
+.current.site-nav-link {
   color: var(--accent-color);
 }
-.nav-link {
+.site-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -92,14 +93,13 @@ nav a {
   color: var(--title-text-color);
   text-decoration: none;
 }
-.nav-contact-link {
+.contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primeri-text-color);
   text-decoration: none;
-  margin-left: 50px;
 }
 /* ------------------------HERO--------------------------------- */
 .hero {
@@ -140,13 +140,13 @@ nav a {
   border-radius: 4px;
 }
 /* ------------------------FEATURES--------------------------------- */
-.features {
+.section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin-right: -30px;
 }
 .features-item {
@@ -172,7 +172,7 @@ nav a {
 }
 /* ------------------------TECHNIQUES--------------------------------- */
 .techniques {
-  padding: 94px 0;
+  padding-top: 0px;
 }
 .techniques-title {
   font-weight: 700;
@@ -181,12 +181,11 @@ nav a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .techniques-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin-right: -30px;
 }
 .techniques-item {
@@ -197,7 +196,6 @@ nav a {
 /* ------------------------TEAM--------------------------------- */
 .team {
   background-color: #f5f4fa;
-  padding: 94px 0;
 }
 .team-title {
   font-weight: 700;
@@ -212,12 +210,12 @@ nav a {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin-right: -30px;
 }
 .team-item {
   flex-basis: calc(100% / 4 -30px);
   margin-right: 30px;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -263,8 +261,8 @@ address {
 .footer-logo-part {
   color: var(--accent-color);
 }
-.footer-list {
-  list-style: none;
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-address-link {
   display: block;
@@ -273,7 +271,6 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 9px;
 }
 .footer-contact-link {
   display: block;
@@ -282,24 +279,21 @@ address {
   letter-spacing: 0.03em;
   color: var(--secondery-footer-color);
   text-decoration: none;
-  margin-bottom: 9px;
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: #ffffff;
 }
 /* ------------------------PORTFOLIO--------------------------------- */
-.portfolio {
-  padding: 94px 0;
-}
-
 .filter {
   display: flex;
-  list-style: none;
   justify-content: center;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
+}
+.filter-item {
+  margin-bottom: 47px;
 }
 .filter-button {
   font-weight: 500;
@@ -312,26 +306,24 @@ address {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  margin-bottom: 47px;
+  padding: 5px 22px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: -50px;
+  margin-bottom: -30px;
 }
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .portfolio-title {
   margin-bottom: 4px;
 }
 .portfolio-card-text {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 .filter-button:hover,
@@ -343,9 +335,7 @@ address {
   background-color: var(--accent-color);
   color: #ffffff;
 }
-.portfolio-list {
-  list-style: none;
-}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
