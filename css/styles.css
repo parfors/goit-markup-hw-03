@@ -288,13 +288,12 @@ address {
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-item {
-  margin-bottom: 47px;
-}
+
 .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -310,7 +309,7 @@ address {
 }
 .portfolio-list {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
